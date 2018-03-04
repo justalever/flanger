@@ -1,0 +1,44 @@
+<% content_for :header do %>
+<section class="hero is-warning">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Browse the latest instruments on Flanger
+      </h1>
+    </div>
+  </div>
+</section>
+<% end %>
+
+<div class="instrument-index-grid pt4">
+  <% @instruments.each do |instrument| %>
+
+    <div class="instrument border-light">
+      <div class="instrument-thumb">
+      <%= link_to image_tag(instrument.image_url(:thumb)), instrument %>
+
+      <% if instrument.condition? %>
+        <div class="condition">
+          <span class="tag is-dark"><%= instrument.condition %></span>
+        </div>
+      <% end %>
+      </div>
+
+
+    <div class="pa3">
+
+      <h3 class="fw7 f4 title"><%= link_to instrument.title, instrument %></h3>
+
+      <p class="has-text-gray fg pt1">Sold by <%= instrument.user.name %></p>
+
+      <p class="f3 fw6 has-text-right pt2 price"><%= number_to_currency(instrument.price) %></p>
+
+      <% if instrument_author(instrument) %>
+         <%= link_to 'Edit', edit_instrument_path(instrument), class: "button is-small" %>
+         <%= link_to 'Delete', instrument, method: :delete, data: { confirm: "Are you sure ?" }, class: "button is-small" %>
+      <% end %>
+
+    </div>
+  </div>
+  <% end %>
+</div>

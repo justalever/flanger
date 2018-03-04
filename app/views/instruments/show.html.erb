@@ -1,0 +1,73 @@
+<% content_for :body_class, 'bg-light' %>
+
+<section class="section instrument-show">
+  <div class="columns">
+    <div class="column is-8">
+      <h1 class="title is-2"><%= @instrument.title %></h1>
+
+      <ul class="pv1">
+        <% if @instrument.brand? %>
+        <li class="inline-block pr3"><%= @instrument.brand %></li>
+        <% end %>
+
+        <li class="inline-block pr3"><%= @instrument.model %></li>
+
+        <% if @instrument.condition? %>
+        <li class="inline-block pr3"><%= @instrument.condition %></li>
+        <% end %>
+      </ul>
+
+      <div class="feature-image">
+        <%= image_tag(@instrument.image_url(:default)) %>
+      </div>
+
+      <div class="content pa4 mt3 bg-white border-radius-3">
+
+      <h3 class="subtitle is-4">Description</h3>
+      <%= @instrument.description %>
+
+
+      <h3 class="subtitle is-4 pt5">Product Specs</h3>
+
+      <table class="table is-narrow">
+        <% if @instrument.condition %>
+        <tr>
+          <td class="has-text-weight-bold">Condition:</td>
+          <td><%= @instrument.condition %></td>
+        </tr>
+        <% end %>
+
+        <% if @instrument.finish %>
+          <tr>
+            <td class="has-text-weight-bold">Finish:</td>
+            <td><%= @instrument.finish %></td>
+          </tr>
+        <% end %>
+
+        <% if @instrument.brand %>
+          <tr>
+            <td class="has-text-weight-bold">Brand:</td>
+            <td><%= @instrument.brand %></td>
+          </tr>
+        <% end %>
+
+        <tr>
+          <td class="has-text-weight-bold">Model:</td>
+          <td><%= @instrument.model %></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="column is-3 is-offset-1">
+      <div class="bg-white pa4 border-radius-3">
+        <h4 class="title is-5 has-text-centered"><%= number_to_currency(@instrument.price) %></h4>
+        <p class="has-text-centered mb4">Sold by <%= @instrument.user.name %></p>
+        <%= button_to 'Add to cart', '#', class: 'button is-warning add-to-cart' %>
+      </div>
+    </div>
+  </div>
+
+  <% if instrument_author(@instrument) %>
+    <%= link_to 'Edit', edit_instrument_path(@instrument), class: 'button' %>
+  <% end %>
+</section>
