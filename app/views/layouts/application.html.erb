@@ -38,16 +38,16 @@
           <div class="navbar-item">
             <div class="field is-grouped">
 
-            <%# if cart_has_items %>
-              <%#= link_to cart_path(@cart), class:"navbar-item button is-warning" do %>
-          <!--     <span class="icon is-small">
+            <% if cart_has_items %>
+              <%= link_to cart_path(@cart), class:"navbar-item button is-warning" do %>
+              <span class="icon is-small">
                 <i class="fa fa-shopping-cart"></i>
               </span>
               <span>Cart
-                <%#= cart_count_over_one %>
-                </span> -->
-              <%# end %>
-            <%# end %>
+                <%= cart_count_over_one %>
+                </span>
+              <% end %>
+            <% end %>
 
             <% if user_signed_in? %>
               <%= link_to 'Sell', new_instrument_path, class: "navbar-item button is-dark" %>
