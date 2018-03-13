@@ -7,14 +7,15 @@ Welcome to the next installment of my Let’s Build series featuring Ruby on Rai
 If you have followed my previous builds, I stem some ideas from those as well as establish some new ideas and techniques. Much of what is discussed I’ve covered before but there are some new concepts such as database seeding and session parameters I dive into in this series.
 
 CHECK OUT THE PREVIOUS SERIES:
-[Let’s Build: With Ruby on Rails – Introduction](https://web-crunch.com/lets-build-with-ruby-on-rails-introduction/)
-[Let’s Build: With Ruby on Rails – Installation](https://web-crunch.com/lets-build-with-ruby-on-rails-installation/)
-[Let’s Build: With Ruby on Rails – Blog with Comments](https://web-crunch.com/lets-build-with-ruby-on-rails-blog-with-comments)
-[Let’s Build: With Ruby on Rails – Twitter Clone](https://web-crunch.com/lets-build-with-ruby-on-rails-a-twitter-clone/)
-[Let’s Build: With Ruby on Rails – Dribbble Clone](https://web-crunch.com/lets-build-dribbble-clone-with-ruby-on-rails/)
-[Let’s Build: With Ruby on Rails – Project Management App](https://web-crunch.com/lets-build-with-ruby-on-rails-project-management-app/)
-[Let’s Build: With Ruby on Rails – Discussion Forum](https://web-crunch.com/lets-build-with-ruby-on-rails-discussion-forum/)
-[Let’s Build: With Ruby on Rails – Deploying an App to Heroku](https://web-crunch.com/lets-build-with-ruby-on-rails-deploying-an-app-to-heroku/)
+
+- [Let’s Build: With Ruby on Rails – Introduction](https://web-crunch.com/lets-build-with-ruby-on-rails-introduction/)
+- [Let’s Build: With Ruby on Rails – Installation](https://web-crunch.com/lets-build-with-ruby-on-rails-installation/)
+- [Let’s Build: With Ruby on Rails – Blog with Comments](https://web-crunch.com/lets-build-with-ruby-on-rails-blog-with-comments)
+- [Let’s Build: With Ruby on Rails – Twitter Clone](https://web-crunch.com/lets-build-with-ruby-on-rails-a-twitter-clone/)
+- [Let’s Build: With Ruby on Rails – Dribbble Clone](https://web-crunch.com/lets-build-dribbble-clone-with-ruby-on-rails/)
+- [Let’s Build: With Ruby on Rails – Project Management App](https://web-crunch.com/lets-build-with-ruby-on-rails-project-management-app/)
+- [Let’s Build: With Ruby on Rails – Discussion Forum](https://web-crunch.com/lets-build-with-ruby-on-rails-discussion-forum/)
+- [Let’s Build: With Ruby on Rails – Deploying an App to Heroku](https://web-crunch.com/lets-build-with-ruby-on-rails-deploying-an-app-to-heroku/)
 
 ### What’s the app?
 
