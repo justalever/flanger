@@ -38,7 +38,7 @@
           <div class="navbar-item">
             <div class="field is-grouped">
 
-            <% if cart_has_items %>
+            <% if total_cart_items %>
               <%= link_to cart_path(@cart), class:"navbar-item button is-warning" do %>
               <span class="icon is-small">
                 <i class="fa fa-shopping-cart"></i>
